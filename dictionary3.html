@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>The anwser for Dictionary - Excercise 3 is</h3>
+<p>dict1 = {'maths' : 23 , 'science' : 20 , 'history' : 20}<br>
+dict2 = {'computer science' : 22}<br>
+dict3 = {}<br>
+dict3.update(dict1)<br>
+dict3.update(dict2)<br>
+print('The value of dict3 is %s'%dict3)<br>
+dict2.clear()<br>
+print('The values of dict2 after clearing is %s'%dict2)<br>
+del dict1<br>
+val = input('Enter subject to check ')<br>
+output = dict3.get(val.lower(),'The subject is not in dictionary')<br>
+print(output)
+</p>
+
+</body>
+</html>
