@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solution for Exception</title>
+		<link rel="stylesheet" type="text/css" href="/main.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+        </ul>
+     </nav>
+		<h3>The answer for Exception - Excercise 2 is</h3><p>
+     #paste the final function exercise code below and do the following<br>
+#Do you code below<br>
+flag = True<br>
+def addition(a,b):<br>
+  print('The addition of %s and %s is %s' %(a,b,a+b))<br>
+def subtraction(a,b):<br>
+  print('The subtraction of %s and %s is %s'%(a,b,a-b))<br>
+def multiplication(a,b):<br>
+  print('The multiplication of %s and %s is %s'%(a,b,a*b))<br>
+def division(a,b):<br>
+  print('The division of %s and %s is %s'%(a,b,a/b))<br><br>
+try:<br>
+  while (flag == True):<br>
+    print('1.Addition')<br>
+    print('2.subtraction')<br><br>
+    print('3.multiplication')<br>
+    print('4.division')<br>
+    print('5.Quit')<br>
+    print('Enter the operation you need to perform')<br>
+    var = int(input())<br>
+    if var not in [1,2,3,4,5]:<br>
+      print('Enter the correct option')<br>
+      continue<br>
+    if var == 5:<br>
+      flag = False<br>
+      continue<br>
+    print('Enter the first number')<br>
+    var2 = int(input())<br>
+    print('Enter the second number')<br><br>
+    var3 = int(input())<br>
+    if var == 1:<br>
+      addition(var2,var3)<br>
+    elif var == 2:<br>
+      subtraction(var2,var3)<br>
+    elif var == 3:<br>
+      multiplication(var2,var3)<br>
+    elif var == 4:<br>
+      division(var2,var3)<br>
+except ValueError:<br>
+  print('value error occured')<br>
+except ZeroDivisionError:<br>
+  print('Zero division error occured')<br>
+finally:<br>
+  print('Thank you for using calculator')
+     
+    </p>
+  </body>
+</head>    
