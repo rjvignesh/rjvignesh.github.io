@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solution for Conditional statements</title>
+		<link rel="stylesheet" type="text/css" href="/main.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+        </ul>
+     </nav>
+		<h3>The answer for Conditional Statements - Excercise 14 is</h3><p>
+list1 = [1,2,3,4,5,6,7,8,9,10]<br>
+flag = True<br>
+while flag == True:<br>
+  print('The list looks like %s'%list1)<br>
+  ans = input('Do you want to rotate the elements in the list (y \ n ) ?')<br>
+  if ans.lower()  == 'n':<br>
+    flag = False<br>
+  elif ans.lower() == 'y':<br>
+    rot = input('Do you want to rotate left or right ( l \ r ) ?')<br>
+    if rot.lower() == 'r':<br><br>
+      val = list1.pop(-1)<br>
+      list1.insert(0,val)<br>
+    elif rot.lower() == 'l':<br>
+      val = list1.pop(0)<br>
+      list1.append(val)<br>
+print('The final list looks like %s'%list1)<br>
+    </p>
+  </body>
+</head>    
