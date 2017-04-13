@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solution for Conditional statements</title>
+		<link rel="stylesheet" type="text/css" href="/main.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+        </ul>
+     </nav>
+		<h3>The answer for Continue Statements is</h3><p>
+     list1 = [5,3]<br>
+list2 = ['-','+']<br>
+list3 = [3,1]<br>
+#Do your code below<br>
+for i in range(0,len(list1)):<br>
+  flag1 = True<br>
+  while flag1 == True:<br>
+    print('%s %s %s = ?'%(list1[i],list2[i],list3[i]))<br>
+    print('Enter the answer for the above equation')<br>
+    ans = int(input())<br>
+    if list2[i] == '-':<br>
+      check = list1[i] - list3[i]<br>
+    if list2[i] == '+':<br>
+      check = list1[i] + list3[i]<br>
+    if ans == check:<br>
+      print('The answer is correct')<br>
+    else:<br>
+      print('The answer is wrong')<br>
+      continue<br>
+    flag1 = False<br>
+    </p>
+  </body>
+</head>    
