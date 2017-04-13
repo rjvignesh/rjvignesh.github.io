@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solution for Conditional statements</title>
+		<link rel="stylesheet" type="text/css" href="/main.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+        </ul>
+     </nav>
+		<h3>The answer for Conditional Statements - Excercise 6 is</h3>
+     <p>
+     var = input('Enter the input')<br>
+oddList = []<br>
+evenList = []<br>
+for i in var:<br>
+  if int(i) % 2 == 0:<br>
+    if int(i) not in evenList:<br>
+      evenList.append(int(i))<br>
+  elif int(i) % 2 != 0:<br>
+    if int(i) not in oddList:<br>
+      oddList.append(int(i))<br>
+if evenList == []:<br>
+  print('There are no even numbers in the input')<br>
+else:<br>
+  if len(evenList) == 1:<br>
+    print('The even numbers in the input is %s'%evenList[0])<br>
+  else:<br>
+    print('The even numbers in the list are %s'%evenList)<br>
+if oddList == []:<br>
+  print('There are no odd numbers in the input')<br>
+else:<br>
+  if len(oddList) == 1:<br>
+    print('The odd numbers in the input is %s'%oddList[0])<br>
+  else:<br>
+    print('The odd numbers in the list are %s'%oddList)<br>
+    </p>
+  </body>
+</head>    
