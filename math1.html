@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solution for Math Range</title>
+		<link rel="stylesheet" type="text/css" href="/main.css">
+	</head>
+	<body>
+		<nav>
+    		<ul>
+        		<li><a href="/">Home</a></li>
+        </ul>
+     </nav>
+		<h3>The answer for Math Range - Excercise 1 is</h3><p>
+    #import and do the excercise<br>
+import math<br>
+var1 = input('Enter value for which you need to find the logarithm value?')<br>
+print('The log value of %s is %s' %(var1, math.log10(int(var1))))<br>
+var2 = input('Enter value for which you need to find the exponential value?')<br><br>
+print('The exponential value of %s is %s' %(var2, math.exp(int(var2))))<br>
+var3 = input('Enter value for which you need to find the square value?')<br>
+print('The squareroot of %s is %s' %(var3,math.sqrt(int(var3))))<br>
+var4 = input('Enter value for which you need to find the power value?')<br>
+var5 = var4.split('^')<br>
+powe = math.pow(int(var5[0]),int(var5[-1]))<br>
+print('The power of %s is %s' %(var4,powe))<br>
+var6 = float(input('Enter the value for which you want to round'))<br>
+var7 = int(input('Enter the decimal upto which you want to roundoff'))<br>
+print('The rounded value of %s is %s' %(var6,round(var6,var7)))<br>
+
+
+    </p>
+  </body>
+</head>    
